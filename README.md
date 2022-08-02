@@ -1,4 +1,4 @@
-# -Hyperledger-Fabric-Smart-Contract-with-IPFS
+# Hyperledger-Fabric-Smart-Contract-with-IPFS
 This assignment builds upon assignment A2 in which you developed a smart contract for an Hyperledger Fabric (HLF) blockchain. Thus, this assignment’s requirements are very similar to those of your assignment A3-Ethereum-with-IPFS, except that instead of using the Ethereum blockchain, you need to use HLF.
 However, in assignment A2, you did not have to handle a business document, which could be a contract on which the companies need to agree. In this assignment, your application and the smart contract also need to handle a business document/contract: 
 •	The document/contract needs to be stored on IPFS.
