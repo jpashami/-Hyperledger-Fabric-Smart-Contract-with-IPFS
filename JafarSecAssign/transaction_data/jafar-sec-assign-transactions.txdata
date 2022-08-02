@@ -1,0 +1,44 @@
+[
+    {
+        "transactionName": "jafarSecAssignExists",
+        "transactionLabel": "A test jafarSecAssignExists transaction",
+        "arguments": [
+            "001"
+        ],
+        "transientData": {}
+    },
+    {
+        "transactionName": "createJafarSecAssign",
+        "transactionLabel": "A test createJafarSecAssign transaction",
+        "arguments": [
+            "001",
+            "some value"
+        ],
+        "transientData": {}
+    },
+    {
+        "transactionName": "readJafarSecAssign",
+        "transactionLabel": "A test readJafarSecAssign transaction",
+        "arguments": [
+            "001"
+        ],
+        "transientData": {}
+    },
+    {
+        "transactionName": "updateJafarSecAssign",
+        "transactionLabel": "A test updateJafarSecAssign transaction",
+        "arguments": [
+            "001",
+            "some other value"
+        ],
+        "transientData": {}
+    },
+    {
+        "transactionName": "deleteJafarSecAssign",
+        "transactionLabel": "A test deleteJafarSecAssign transaction",
+        "arguments": [
+            "001"
+        ],
+        "transientData": {}
+    }
+]

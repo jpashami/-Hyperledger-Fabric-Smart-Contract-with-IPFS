@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Contract Confirmation</title>
+  </head>
+  <body>
+    <script type="module" src="script.js"></script>
+    <div class="container">
+      <div class="card">
+        <div class="card-header">
+          <h4>Contract Status</h4>
+        </div>
+        <div class="card-body">
+          <p id="contractStatus"></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <h4>Contract Initialization - Notary section</h4>
+        </div>
+        <div class="card-body">
+          <div class="input-group input-group-sm mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-sm-id">Contract ID: </span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" value="1" id="id">
+          </div>
+          <div class="input-group input-group-sm mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-sm-value">Contract Content: </span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="value">
+          </div>
+          <button class="btn btn-primary" type="submit" id="readIPFScontent" >Read Content from IPFS</button>
+          <button class="btn btn-primary" type="submit" id="readContract" >Read Contract Status</button>
+          <button class="btn btn-success" type="submit" id="InsertContract" >Insert/Update Contract</button>
+          <button class="btn btn-danger" type="submit" id="deleteContract" >Delete Contract</button>
+        </div>
+      </div>
+      <div class="card">
+          <div class="card-header">
+            <h4>Contract Verification - Buyer section</h4>
+          </div>
+          <div class="card-body">
+            <button class="btn btn-success" type="submit" id="buyerCheckGenuine">Check the document's genuineness</button>
+            <button class="btn btn-success" type="submit" id="buyerApprove">Approve & Sign Contract</button>
+            <button class="btn btn-danger" type="submit" id="buyerReject" >Reject Contract</button>
+            <p id="buyerNotification_1"></p>
+            <p id="buyerNotification_2"></p>
+            <p id="buyerNotification_3"></p>
+          </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <h4>Contract Verification - Seller section</h4>
+        </div>
+        <div class="card-body">
+          <button class="btn btn-success" type="submit" id="sellerCheckGenuine">Check the document's genuineness</button>
+          <!-- <button class="btn btn-success" type="submit" id="checkBuyerSig">Check the Buyer Signature</button> -->
+          <button class="btn btn-success" type="submit" id="sellerApprove">Approve & Sign Contract</button>
+          <button class="btn btn-danger" type="submit" id="sellerReject" >Reject Contract</button>
+          <p id="sellerNotification_1"></p>
+          <p id="sellerNotification_2"></p>
+          <p id="sellerNotification_3"></p>
+        </div>
+      </div>
+    </div>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+        type="application/javascript"></script> -->
+  </body>
+</html>

@@ -1,0 +1,44 @@
+[
+    {
+        "transactionName": "myAssetJafarAbExists",
+        "transactionLabel": "A test myAssetJafarAbExists transaction",
+        "arguments": [
+            "001"
+        ],
+        "transientData": {}
+    },
+    {
+        "transactionName": "createMyAssetJafarAb",
+        "transactionLabel": "A test createMyAssetJafarAb transaction",
+        "arguments": [
+            "001",
+            "some value"
+        ],
+        "transientData": {}
+    },
+    {
+        "transactionName": "readMyAssetJafarAb",
+        "transactionLabel": "A test readMyAssetJafarAb transaction",
+        "arguments": [
+            "001"
+        ],
+        "transientData": {}
+    },
+    {
+        "transactionName": "updateMyAssetJafarAb",
+        "transactionLabel": "A test updateMyAssetJafarAb transaction",
+        "arguments": [
+            "001",
+            "some other value"
+        ],
+        "transientData": {}
+    },
+    {
+        "transactionName": "deleteMyAssetJafarAb",
+        "transactionLabel": "A test deleteMyAssetJafarAb transaction",
+        "arguments": [
+            "001"
+        ],
+        "transientData": {}
+    }
+]

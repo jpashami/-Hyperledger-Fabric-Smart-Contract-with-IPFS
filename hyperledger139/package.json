@@ -1,0 +1,63 @@
+{
+  "name": "hyperledger139",
+  "version": "0.0.1",
+  "description": "My Smart Contract",
+  "main": "index.js",
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "nyc mocha --recursive",
+    "start": "fabric-chaincode-node start"
+  },
+  "engineStrict": true,
+  "author": "John Doe",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "assert": "^2.0.0",
+    "bootstrap": "^5.2.0-beta1",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "express": "^4.18.1",
+    "express-csp-header": "^5.1.0",
+    "fabric-ca-client": "^2.2.13",
+    "fabric-contract-api": "^2.4.2",
+    "fabric-shim": "^2.4.1",
+    "fs": "^0.0.1-security",
+    "ipfs-http-client": "^57.0.3",
+    "jquery": "^3.6.0",
+    "module": "^1.2.5",
+    "require": "^0.4.4"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "eslint": "^8.7.0",
+    "fabric-network": "^2.2.0",
+    "mocha": "^9.2.0",
+    "nyc": "^15.0.0",
+    "sinon": "^9.0.1",
+    "sinon-chai": "^3.5.0",
+    "winston": "^3.2.1"
+  },
+  "nyc": {
+    "exclude": [
+      ".eslintrc.js",
+      "coverage/**",
+      "test/**"
+    ],
+    "reporter": [
+      "text-summary",
+      "html"
+    ],
+    "all": true,
+    "check-coverage": true,
+    "statements": 100,
+    "branches": 100,
+    "functions": 100,
+    "lines": 100
+  }
+}
